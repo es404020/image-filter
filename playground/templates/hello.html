@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<p>oshey {{name}}</p>
+
+
+
+<form method="post" action="take" enctype="multipart/form-data">
+{% csrf_token %}
+<input type="file" name="in" />
+
+    <div class="form-check form-switch">
+
+        <input class="form-check-input" type="checkbox" id="checkbox1" name="sketch">
+        <label class="form-check-label" for="flexSwitchCheckDefault">Sketch/Pencil</label>
+
+    </div>
+        <div class="form-check form-switch">
+
+        <input class="form-check-input" type="checkbox" id="checkbox2" name="blur">
+        <label class="form-check-label" for="flexSwitchCheckDefault">Blur</label>
+
+    </div>
+        <div class="form-check form-switch">
+
+        <input class="form-check-input" type="checkbox" id="checkbox3" name="negative">
+        <label class="form-check-label" for="flexSwitchCheckDefault">Negative</label>
+
+    </div>
+           <div class="form-check form-switch">
+
+        <input class="form-check-input" type="checkbox" id="checkbox4" name="sharp">
+        <label class="form-check-label" for="flexSwitchCheckDefault">Sharp</label>
+
+    </div>
+    <br>
+
+    <input type="submit" value="submit">
+
+</form>
+
+<img src={{filePathName}} HEIGHT="150" WIDTH="150" alt="im" />
+
+</body>
+</html>
