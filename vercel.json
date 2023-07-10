@@ -10,7 +10,7 @@
   }],
   "functions":{
     "*":{
-      "excludeFiles":"image/playground/media/"
+      "excludeFiles":"image/playground/media/*"
     },
   "routes": [
     {
