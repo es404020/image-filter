@@ -6,7 +6,12 @@
 "maxLambdaSize": "115mb",
       "runtime": "python3.9"
     }
+
   }],
+  "functions":{
+    "*":{
+      "excludeFiles":"image/playground/media/"
+    },
   "routes": [
     {
       "src": "/(.*)",
