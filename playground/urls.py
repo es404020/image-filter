@@ -4,7 +4,7 @@ from django.conf import  settings
 from django.conf.urls.static import static
 #urlConf
 urlpatterns= [
-    path('',views.say_hello),
+    path('',views.say_hello,name='home'),
     path('take', views.take),
     # static(settings.MEDIA_URL,settings.MEDIA_ROOT)
 ]
