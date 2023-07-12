@@ -26,7 +26,7 @@ SECRET_KEY = "django-insecure-t$%81j5qxauvjv0cdx^0-0q3y!wwj60!gavem@adk7obnhc$s!
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 TAILWIND_APP_NAME = 'imgs'
 # Application definition
