@@ -26,8 +26,10 @@ from django.conf.urls.static import static
 urlpatterns = [
     path("admin/", admin.site.urls),
     path('playground/',include('playground.urls')),
-    path('__debug__/', include(debug_toolbar.urls)),
+    # path('__debug__/', include(debug_toolbar.urls)),
     path('', views.index, name='index'),
+    path('rooms/', views.rooms, name='rooms'),
+    path("__reload__/", include("django_browser_reload.urls")) # new,,
 
 ]
 
