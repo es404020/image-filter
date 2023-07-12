@@ -3,3 +3,4 @@ django-debug-toolbar~=4.1.0
 opencv-python~=4.7.0.72
 numpy~=1.20.3
 opencv-python-headless~=4.5.3.56
+django_compressor~=4.7.1
