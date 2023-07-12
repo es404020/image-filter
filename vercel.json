@@ -9,7 +9,10 @@
 
   }],
   "functions":{
-    "*":{
+    "image/*":{
+     "memory": 3008,
+      "maxDuration": 30
+    }, "playground/*":{
      "memory": 3008,
       "maxDuration": 30
     },
