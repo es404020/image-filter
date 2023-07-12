@@ -10,7 +10,8 @@
   }],
   "functions":{
     "*":{
-      "excludeFiles":"image/playground/media/*"
+     "memory": 3008,
+      "maxDuration": 30
     },
   "routes": [
     {
