@@ -57,7 +57,8 @@ MIDDLEWARE = [
 
 INTERNAL_IPS =[
     '127.0.0.1',
-    '.vercel.app'
+    '.vercel.app',
+    '.railway.app'
 ]
 
 ROOT_URLCONF = "image.urls"
